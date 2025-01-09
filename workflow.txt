@@ -1,0 +1,14 @@
+1> added a app.py
+2> added requirements.txt
+3> create a dockerfile
+    - Dockerfile
+        It is a text file with instructions on how to build a Docker image. It's a
+        blueprint for the image, specifying the environment, app, and
+        dependencies.
+        --Key Components:
+            FROM: Specifies the base image.
+            COPY or ADD: Adds files from your host system into the image.
+            RUN: Executes commands in the image, such as installing software.
+            CMD or ENTRYPOINT: Defines the command that runs when the
+            container starts.
+            EXPOSE: Specifies the port the container will listen on.
