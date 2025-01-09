@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 # Initialize the Flask application
 app = Flask(__name__)
 
-# Define the route for the home page
+# Define the route for the home page 
 @app.route('/')
 def index():
     # Return an HTML form for user input

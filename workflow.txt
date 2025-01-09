@@ -12,3 +12,21 @@
             CMD or ENTRYPOINT: Defines the command that runs when the
             container starts.
             EXPOSE: Specifies the port the container will listen on.
+4> Open Docker Desktop and run following in terminal (here we are calling it docker-demo):
+    - docker build -t <docker-demo> .
+    - docker run -p 5000:5000 <docker-demo>  # port mapping
+    - it will start the container in Docker Desktop
+
+5> Now we need to add a tag to this image before pushing it to the docker hub
+    - docker tag <your_App_name> <docker_username>/<your_App_name>:<any_tag>
+        e.g. docker tag docker-demo satanix/docker-demo:latest_image
+6> push the image to docker hub:
+    - docker push <docker_username>/<your_App_name>:<tag_of_image>
+        e.g. docker push satanix/docker-demo:latest_image
+
+
+
+7> How to pull an image from docker
+    - docker pull satanix/docker-demo:latest_image
+8> Run the pulled image as a container
+    - docker run -p 5000:5000 satanix/docker-demo:latest_image
